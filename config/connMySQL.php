@@ -8,7 +8,7 @@ class connMySQL {
         try 
         {
 
-           $conn=new mysqli('localhost','root','','db_tienda');
+           $conn=new mysqli('localhost','root','','tiendarg');
 
            return $conn;
         } 

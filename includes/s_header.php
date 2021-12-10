@@ -110,25 +110,7 @@
     <div class="container">
         <div class="nav-depart">
             <div class="depart-btn">
-
-            <?php 
-                require_once "controller/cMarcaC.php";
-                $oContMarcaL = new cMarcaC();
-                $resultMarcaL = $oContMarcaL->listar();
-            ?>
-
-                <i class="ti-menu"></i>
-                <span>CATEGORIAS </span>
-                <ul class="depart-hover">
-                    <?php  
-                        foreach ($resultMarcaL as $rowML) {
-                            {
-                        }
-                    ?>
-                    <li class=""><a href="#"><?php echo $rowML["nomb_mar"]; ?></a></li>
-
-                    <?php  } ?>
-                </ul>
+                <?php include_once 'includes/s_categoria.php'; ?> 
             </div>
         </div>
         <nav class="nav-menu mobile-menu">
