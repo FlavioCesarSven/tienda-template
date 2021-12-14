@@ -11,7 +11,7 @@ $resultCategoria = $oContCategoria->listar();
     foreach ($resultCategoria as $rowC) { {
         }
     ?>
-        <li class=""><a href="#"><?php echo $rowC["nomb_cat"]; ?></a></li>
+        <li class=""><a href="productos_categoria.php?idcat=<?php echo $rowC["idcategoria"]; ?>"><?php echo $rowC["nomb_cat"]; ?></a></li>
 
     <?php  } ?>
 </ul>
